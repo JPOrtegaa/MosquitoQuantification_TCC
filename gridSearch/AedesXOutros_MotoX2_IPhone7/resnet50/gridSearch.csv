@@ -1,0 +1,7 @@
+lr,epochs,pt,best_loss,train_scores
+0.001,100,0,4.13693196605891e-05,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AedesXOutros_MotoX2_IPhone7\resnet50\ValidationScores_0.001_100_0.csv
+0.001,100,1,6.594272150550751e-08,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AedesXOutros_MotoX2_IPhone7\resnet50\ValidationScores_0.001_100_1.csv
+0.01,100,0,0.0006591943674720824,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AedesXOutros_MotoX2_IPhone7\resnet50\ValidationScores_0.01_100_0.csv
+0.01,100,1,0.0003090282843913883,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AedesXOutros_MotoX2_IPhone7\resnet50\ValidationScores_0.01_100_1.csv
+0.1,100,0,0.0005162704619579017,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AedesXOutros_MotoX2_IPhone7\resnet50\ValidationScores_0.1_100_0.csv
+0.1,100,1,0.0011820093495771289,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AedesXOutros_MotoX2_IPhone7\resnet50\ValidationScores_0.1_100_1.csv

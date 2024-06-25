@@ -1,0 +1,7 @@
+lr,epochs,pt,best_loss,train_scores
+0.001,100,0,0.0023671973031014204,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AegyptiXOutros_IPhone7\vgg16\ValidationScores_0.001_100_0.csv
+0.001,100,1,0.0004273834347259253,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AegyptiXOutros_IPhone7\vgg16\ValidationScores_0.001_100_1.csv
+0.01,100,0,0.0012892514932900667,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AegyptiXOutros_IPhone7\vgg16\ValidationScores_0.01_100_0.csv
+0.01,100,1,0.002932800678536296,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AegyptiXOutros_IPhone7\vgg16\ValidationScores_0.01_100_1.csv
+0.1,100,0,9.29404727800868e+24,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AegyptiXOutros_IPhone7\vgg16\ValidationScores_0.1_100_0.csv
+0.1,100,1,4.683217254258867e+21,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AegyptiXOutros_IPhone7\vgg16\ValidationScores_0.1_100_1.csv

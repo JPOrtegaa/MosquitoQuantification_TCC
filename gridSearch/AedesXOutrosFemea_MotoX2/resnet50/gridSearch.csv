@@ -1,0 +1,7 @@
+lr,epochs,pt,best_loss,train_scores
+0.001,100,0,7.037695922917919e-06,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AedesXOutrosFemea_MotoX2\resnet50\ValidationScores_0.001_100_0.csv
+0.001,100,1,2.535630301281344e-06,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AedesXOutrosFemea_MotoX2\resnet50\ValidationScores_0.001_100_1.csv
+0.01,100,0,1.3270045201352332e-05,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AedesXOutrosFemea_MotoX2\resnet50\ValidationScores_0.01_100_0.csv
+0.01,100,1,5.808950845676009e-06,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AedesXOutrosFemea_MotoX2\resnet50\ValidationScores_0.01_100_1.csv
+0.1,100,0,0.002712915651500225,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AedesXOutrosFemea_MotoX2\resnet50\ValidationScores_0.1_100_0.csv
+0.1,100,1,0.0025160613004118204,C:\1Faculdade\4ano\Final_REPO_TCC\MosquitoQuantification_TCC\scores\AedesXOutrosFemea_MotoX2\resnet50\ValidationScores_0.1_100_1.csv

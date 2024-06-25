@@ -1,0 +1,7 @@
+lr,epochs,pt,best_loss,train_scores
+0.001,100,0,7.96586732576543e-07,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/VetorXNaoVetor_Park/vgg16/ValidationScores_0.001_100_0.csv
+0.001,100,1,1.731511933833474e-09,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/VetorXNaoVetor_Park/vgg16/ValidationScores_0.001_100_1.csv
+0.01,100,0,0.0004593566118273884,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/VetorXNaoVetor_Park/vgg16/ValidationScores_0.01_100_0.csv
+0.01,100,1,0.00011222622561035678,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/VetorXNaoVetor_Park/vgg16/ValidationScores_0.01_100_1.csv
+0.1,100,0,1.6005166174606613e+23,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/VetorXNaoVetor_Park/vgg16/ValidationScores_0.1_100_0.csv
+0.1,100,1,1.1581679729927522e+22,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/VetorXNaoVetor_Park/vgg16/ValidationScores_0.1_100_1.csv

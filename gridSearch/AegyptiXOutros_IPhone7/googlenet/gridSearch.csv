@@ -1,0 +1,7 @@
+lr,epochs,pt,best_loss,train_scores
+0.001,100,0,2.3041851818561554e-05,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AegyptiXOutros_IPhone7/googlenet/ValidationScores_0.001_100_0.csv
+0.001,100,1,5.485756446432788e-06,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AegyptiXOutros_IPhone7/googlenet/ValidationScores_0.001_100_1.csv
+0.01,100,0,7.832416304154322e-05,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AegyptiXOutros_IPhone7/googlenet/ValidationScores_0.01_100_0.csv
+0.01,100,1,2.1608853785437532e-05,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AegyptiXOutros_IPhone7/googlenet/ValidationScores_0.01_100_1.csv
+0.1,100,0,0.0018124463967978954,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AegyptiXOutros_IPhone7/googlenet/ValidationScores_0.1_100_0.csv
+0.1,100,1,5.69752000956214e-06,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AegyptiXOutros_IPhone7/googlenet/ValidationScores_0.1_100_1.csv

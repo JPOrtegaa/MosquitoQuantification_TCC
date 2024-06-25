@@ -1,0 +1,13 @@
+lr,epochs,pt,best_loss,train_scores
+0.001,50,0,3.008514795510564e-05,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AedesXOutros_MotoX2/googlenet/ValidationScores_0.001_50_0.csv
+0.001,50,1,1.8791079128277488e-06,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AedesXOutros_MotoX2/googlenet/ValidationScores_0.001_50_1.csv
+0.01,50,0,0.0001660684938542,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AedesXOutros_MotoX2/googlenet/ValidationScores_0.01_50_0.csv
+0.01,50,1,2.579730426077731e-05,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AedesXOutros_MotoX2/googlenet/ValidationScores_0.01_50_1.csv
+0.1,50,0,0.000852890254464,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AedesXOutros_MotoX2/googlenet/ValidationScores_0.1_50_0.csv
+0.1,50,1,0.0007426801603287,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AedesXOutros_MotoX2/googlenet/ValidationScores_0.1_50_1.csv
+0.001,100,0,2.4708018827368505e-05,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AedesXOutros_MotoX2/googlenet/ValidationScores_0.001_100_0.csv
+0.001,100,1,1.7659929653746076e-05,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AedesXOutros_MotoX2/googlenet/ValidationScores_0.001_100_1.csv
+0.01,100,0,0.0001831640547607094,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AedesXOutros_MotoX2/googlenet/ValidationScores_0.01_100_0.csv
+0.01,100,1,9.614295777282678e-06,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AedesXOutros_MotoX2/googlenet/ValidationScores_0.01_100_1.csv
+0.1,100,0,0.0012942964676767588,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AedesXOutros_MotoX2/googlenet/ValidationScores_0.1_100_0.csv
+0.1,100,1,0.00010994279000442475,/mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu/code/Users/joao.ortega1/MosquitoQuantification_TCC/scores/AedesXOutros_MotoX2/googlenet/ValidationScores_0.1_100_1.csv
