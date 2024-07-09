@@ -212,7 +212,7 @@ if __name__ == '__main__':
     if os.path.exists(gs_file_path):
         gs_df = pd.read_csv(gs_file_path)
     else:
-        gs_df = pd.DataFrame(columns=['lr', 'epochs', 'pt', 'best_loss', 'train_scores'])
+        gs_df = pd.DataFrame(columns=['lr', 'epochs', 'pt', 'batch_size', 'best_loss', 'train_scores'])
 
     # Getting the images and transforming it for the CNN
     image_datasets = transform_images('trains/' + experiment_name)
@@ -230,18 +230,12 @@ if __name__ == '__main__':
     seed = torch.Generator().manual_seed(17)
 
     train_set = torch.utils.data.random_split(image_datasets, folds, seed)
-    dataloaders = []
-
-    # talvez mudar batch_size para 64
-    # num_workers = num de cores CPU da maquina, no meu caso seria 8
-    for set in train_set:
-        dataloader = torch.utils.data.DataLoader(set, batch_size=16, shuffle=True, num_workers=2)
-        dataloaders.append(dataloader)
 
     param_grid = {
+        'epochs': [100, 1000],
         'lr': [0.001, 0.01, 0.1],
-        'epochs': [100],
-        'pt': [0, 1]
+        'pt': [0, 1],
+        'batch_size': [16, 32, 64]
     }
 
     param_combinations = list(ParameterGrid(param_grid))
@@ -250,8 +244,15 @@ if __name__ == '__main__':
         lr = param['lr']
         epochs = param['epochs']
         pt = param['pt']
+        batch_size = param['batch_size']
 
-        print(f'Training with lr: {lr}, epochs: {epochs}, pt: {pt}')
+        print(f'Training with lr: {lr}, epochs: {epochs}, pt: {pt}, batch_size: {batch_size}')
+
+        # Creating dataloaders here so it can vary the batch_size
+        dataloaders = []
+        for set in train_set:
+            dataloader = torch.utils.data.DataLoader(set, batch_size=batch_size, shuffle=True, num_workers=2)
+            dataloaders.append(dataloader)
 
         pos_probabilities = []
         validation_labels = []
@@ -282,10 +283,10 @@ if __name__ == '__main__':
         if not os.path.exists(scores_path):
             os.makedirs(scores_path)
 
-        validation_scores_path = os.path.abspath(scores_path + '/ValidationScores_' + str(lr) + '_' + str(epochs) + '_' + str(pt) + '.csv')
+        validation_scores_path = os.path.abspath(scores_path + '/ValidationScores_' + str(lr) + '_' + str(epochs) + '_' + str(pt) + '_' + str(batch_size) + '.csv')
         validation_scores.to_csv(validation_scores_path, index=False)
 
-        instance = {'lr': float(lr), 'epochs': int(epochs), 'pt': int(pt), 'best_loss': float(best_eval_loss), 'train_scores': str(validation_scores_path)}
+        instance = {'lr': float(lr), 'epochs': int(epochs), 'pt': int(pt), 'batch_size': int(batch_size), 'best_loss': float(best_eval_loss), 'train_scores': str(validation_scores_path)}
         instance = pd.DataFrame([instance])
 
         gs_df = pd.concat([gs_df, instance], ignore_index=True)
@@ -297,13 +298,14 @@ if __name__ == '__main__':
     best_lr = min_loss_config['lr']
     best_epochs = min_loss_config['epochs']
     best_pt = min_loss_config['pt']
+    best_batch_size = min_loss_config['batch_size']
 
-    print(f'best lr: {best_lr}, best epochs: {best_epochs} best pt: {best_pt}')
+    print(f'best lr: {best_lr}, best epochs: {best_epochs}, best pt: {best_pt}, best batch_size: {best_batch_size}')
 
     model = setting_model(model_name, best_pt)
     criterion, optimizer, scheduler = training_parameters(best_lr)
 
-    full_train_dataloader = torch.utils.data.DataLoader(image_datasets, batch_size=16, shuffle=True, num_workers=2)
+    full_train_dataloader = torch.utils.data.DataLoader(image_datasets, batch_size=best_batch_size, shuffle=True, num_workers=2)
     model = train_model(model, criterion, optimizer, scheduler, best_epochs, [full_train_dataloader])
 
     # Saving model weights
