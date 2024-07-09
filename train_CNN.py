@@ -232,20 +232,19 @@ if __name__ == '__main__':
     train_set = torch.utils.data.random_split(image_datasets, folds, seed)
 
     param_grid = {
-        'epochs': [100, 1000],
-        'lr': [0.001, 0.01, 0.1],
-        'pt': [0, 1],
-        'batch_size': [16, 32, 64]
+        '1epochs': [100, 1000],
+        '2pt': [0, 1],
+        '3lr': [0.001, 0.01, 0.1],
+        '4batch_size': [16, 32, 64]
     }
 
     param_combinations = list(ParameterGrid(param_grid))
 
     for param in tqdm(param_combinations, desc='Grid search'):
-        pdb.set_trace()
-        lr = param['lr']
-        epochs = param['epochs']
-        pt = param['pt']
-        batch_size = param['batch_size']
+        epochs = param['1epochs']
+        pt = param['2pt']
+        lr = param['3lr']
+        batch_size = param['4batch_size']
 
         print(f'Training with lr: {lr}, epochs: {epochs}, pt: {pt}, batch_size: {batch_size}')
 
