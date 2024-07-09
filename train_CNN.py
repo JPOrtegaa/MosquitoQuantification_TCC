@@ -241,6 +241,7 @@ if __name__ == '__main__':
     param_combinations = list(ParameterGrid(param_grid))
 
     for param in tqdm(param_combinations, desc='Grid search'):
+        pdb.set_trace()
         lr = param['lr']
         epochs = param['epochs']
         pt = param['pt']
