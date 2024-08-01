@@ -29,7 +29,6 @@ def transform_images(train_folder):
 def setting_model(cnn_model_name, pre_trained):
     if cnn_model_name == 'resnet50':
         if pre_trained == 1:
-          print('entrou preTrained')
           cnn_model = models.resnet50(weights=models.ResNet50_Weights.DEFAULT)
         else:
           cnn_model = models.resnet50(weights=None)
@@ -41,7 +40,6 @@ def setting_model(cnn_model_name, pre_trained):
 
     elif cnn_model_name == 'vgg16':
         if pre_trained == 1:
-          print('entrou preTrained')
           cnn_model = models.vgg16(weights=models.VGG16_Weights.DEFAULT)
         else:
           cnn_model = models.vgg16(weights=None)
@@ -244,7 +242,7 @@ if __name__ == '__main__':
         epochs = param['1epochs']
         pt = param['2pt']
         lr = param['3lr']
-        batch_size = param['4batch_size']
+        batch_size = int(param['4batch_size'])
 
         print(f'Training with lr: {lr}, epochs: {epochs}, pt: {pt}, batch_size: {batch_size}')
 
@@ -298,7 +296,8 @@ if __name__ == '__main__':
     best_lr = min_loss_config['lr']
     best_epochs = min_loss_config['epochs']
     best_pt = min_loss_config['pt']
-    best_batch_size = min_loss_config['batch_size']
+    pt = best_pt # Verification in line 164
+    best_batch_size = int(min_loss_config['batch_size'])
 
     print(f'best lr: {best_lr}, best epochs: {best_epochs}, best pt: {best_pt}, best batch_size: {best_batch_size}')
 
